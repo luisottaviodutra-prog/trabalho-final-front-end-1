@@ -1,0 +1,164 @@
+/* Seletor Universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Seletor de Elemento */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #d1d5db;
+    background-color: #111827; /* Fundo cinza escuro / grafite */
+}
+
+/* Seletor de ID e agrupados */
+header, footer {
+    background-color: #030712;
+    color: #f9fafb;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 3px solid #374151;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #9ca3af;
+    margin-bottom: 15px;
+}
+
+/* Menu de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #60a5fa; /* Azul destaque ao passar o mouse */
+}
+
+/* Área principal */
+main {
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background: #1f2937; /* Blocos em cinza chumbo */
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid #374151;
+}
+
+h2, h3 {
+    color: #f3f4f6;
+    margin-bottom: 12px;
+}
+
+/* Seletor de Classe */
+.banner-loja img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+figure {
+    text-align: center;
+    margin-top: 15px;
+}
+
+figcaption {
+    font-size: 0.85rem;
+    color: #9ca3af;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* Listas estilizadas */
+ul, ol {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Estilização da Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #374151;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #374151;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+td {
+    color: #d1d5db;
+}
+
+aside {
+    background-color: #1e293b;
+    padding: 20px;
+    margin-top: 20px;
+    border-left: 4px solid #3b82f6;
+    border-radius: 0 4px 4px 0;
+}
+
+footer {
+    font-size: 0.85rem;
+    border-top: 3px solid #374151;
+    border-bottom: none;
+    color: #9ca3af;
+}
+
+footer a {
+    color: #60a5fa;
+}
+
+/* Desenvolvimento Responsivo (Media Queries) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+}
